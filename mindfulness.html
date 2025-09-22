@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenBite | Mindfulness</title>
+<link rel="stylesheet" href="css\nav.css">
+<link rel="stylesheet" href="css\mindfulness.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="logo">GreenBite</a>
+      <button class="hamburger">☰</button>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="mind-main">
+  <div class="mind-box">
+    <h1>Guided Breathing</h1>
+    <p class="instructions">Follow the circle’s movement: inhale as it grows, exhale as it shrinks.</p>
+
+    <div id="circle"></div>
+    <div class="controls">
+      <button id="start">Start Session</button>
+      <button id="soundToggle">Toggle Ambient Sound</button>
+    </div>
+
+    <div class="stats">
+      <p>Session Time: <span id="timer">00:00</span></p>
+      <p>Completed Sessions: <span id="sessionCount">0</span></p>
+    </div>
+    <audio id="ambient" src="assets\sounds\forestbirds-319791.mp3" loop></audio>
+    <audio id="chime" src="assets\sounds\chime-74910.mp3"></audio>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <h3>Subscribe to our Newsletter</h3>
+    <form id="newsletter">
+      <input type="email" placeholder="Your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js\nav.js"></script>
+<script src="js\mindfulness.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenBite | Recipes</title>
+<link rel="stylesheet" href="css\nav.css">
+<link rel="stylesheet" href="css\recipe.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="logo">GreenBite</a>
+      <button class="hamburger">☰</button>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1>Healthy Recipes</h1>
+  <input type="text" id="search" placeholder="Search recipes by name...">
+  <div id="recipe-container" class="grid"></div>
+</main>
+
+<div id="recipe-modal" class="modal">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <h2 id="recipe-title"></h2>
+    <h3>Ingredients</h3>
+    <ul id="ingredients"></ul>
+    <h3>Steps</h3>
+    <ol id="steps"></ol>
+    <h3>Nutrition Info</h3>
+    <table id="nutrition"></table>
+  </div>
+</div>
+<footer>
+  <div class="footer-container">
+    <h3>Subscribe to our Newsletter</h3>
+    <form id="newsletter">
+      <input type="email" placeholder="Your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js\nav.js"></script>
+<script src="js\recipe.js"></script>
+</body>
+</html>

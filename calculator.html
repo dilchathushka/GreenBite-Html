@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenBite | Calorie Calculator</title>
+<link rel="stylesheet" href="css\nav.css">
+<link rel="stylesheet" href="css\calculator.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="logo">GreenBite</a>
+      <button class="hamburger">☰</button>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="calc-section">
+  <div class="calc-card">
+    <h1>Calorie & Nutrition Calculator</h1>
+    <form id="calcForm">
+      <input type="number" id="age" placeholder="Age (years)" required>
+      <select id="gender"><option>Male</option><option>Female</option></select>
+      <input type="number" id="height" placeholder="Height (cm)" required>
+      <input type="number" id="weight" placeholder="Weight (kg)" required>
+      <select id="activity" required>
+        <option value="1.2">Sedentary</option>
+        <option value="1.375">Lightly active</option>
+        <option value="1.55">Moderately active</option>
+        <option value="1.725">Very active</option>
+        <option value="1.9">Super active</option>
+      </select>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="results"></div>
+  </div>
+</main>
+<footer>
+  <div class="footer-container">
+    <h3>Subscribe to our Newsletter</h3>
+    <form id="newsletter">
+      <input type="email" placeholder="Your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js\nav.js"></script>
+<script src="js\calculator.js"></script>
+</body>
+</html>

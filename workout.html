@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenBite | Workout</title>
+<link rel="stylesheet" href="css\nav.css">
+<link rel="stylesheet" href="css\workout.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="logo">GreenBite</a>
+      <button class="hamburger">☰</button>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="workout-container">
+  <h1>💪 Workout Generator</h1>
+  <p>Choose a body part and equipment to generate your workout!</p>
+
+  <div class="workout-controls">
+    <select id="bodypart">
+      <option>Full Body</option>
+      <option>Arms</option>
+      <option>Legs</option>
+    </select>
+
+    <select id="equipment">
+      <option>None</option>
+      <option>Dumbbells</option>
+    </select>
+
+    <button id="generate">Generate Workout</button>
+  </div>
+
+  <div id="plan"></div>
+</div>
+<footer>
+  <div class="footer-container">
+    <h3>Subscribe to our Newsletter</h3>
+    <form id="newsletter">
+      <input type="email" placeholder="Your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js\nav.js"></script>
+<script src="js\workout.js"></script>
+</body>
+</html>
